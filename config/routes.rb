@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   # /sms
   
   get("/", {:controller => "application", :action => "homepage"})
+  
+  get("/text", {:controller => "qr_codes", :action => "process_text"})
 
   # Solutions below.
 
